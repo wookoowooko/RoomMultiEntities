@@ -74,6 +74,14 @@ class MainActivity : ComponentActivity() {
             val schoolWithStudents = dao.getSchoolWithStudents("Kotlin School")
             schoolWithStudents.first()
             println(schoolWithStudents)
+
+            val studentsOfSubject = dao.getStudentsOfSubject("Avoiding depression")
+            studentsOfSubject.first()
+            println(studentsOfSubject)
+
+            val subjectsOfStudent = dao.getSubjectsOfStudent("Beff Jezos")
+            subjectsOfStudent.first()
+            println(subjectsOfStudent)
         }
 
         enableEdgeToEdge()
